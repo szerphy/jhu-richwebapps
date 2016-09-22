@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  padding: 0 10px;
+}
+
+#menu-title {
+  text-align: center;
+  font-size: 175%;
+  font-weight: bold;
+  margin: 20px 0px 30px;
+}
+
+.item-title {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: solid black;
+  border-left-width: 1px;
+  border-bottom-width: 1px;
+  border-top-width: 0;
+  border-right-width: 0;
+  width: 150px;
+  text-align: center;
+  padding: 2px 0;
+  font-size: 125%;
+}
+
+.menu-item {
+  border: 1px solid black;
+  padding: 30px 10px 10px 10px;
+  position: relative;
+  background: #BBB;
+}
+
+.item-content {
+  overflow: hidden;
+  height: 120px;
+}
+
+.item-content:hover {
+  overflow: auto;
+  cursor: row-resize;
+}
+
+#chicken .item-title {
+	background: #D59898;
+}
+
+#beef .item-title {
+	background: #C14543;
+	color: white;
+}
+
+#sushi .item-title {
+	background: #E5D198;
+}
+
+.row {
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+.item-container {
+  padding: 10px;
+}
+
+#category-title {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 150%;
+	font-weight: bold;
+	display: none;
+}
+
+.item-caption {
+	display: none;
+}
+
+/********** desktop devices only **********/
+@media (min-width: 992px) {
+  .item-container {
+  	float: left;
+  	width: 33.33%;
+  }
+}
+
+/********** tablet devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .item-container {
+    float: left;
+    width: 50%;
+  }
+  
+  #sushi {
+    width: 100%;
+  }
+}
+
+/********** mobile devices only **********/
+@media (max-width: 767px) {
+  #menu-title {
+  	display: none;
+  }
+
+  #category-title {
+  	display: block;
+  }
+
+  .item-title {
+  	position: static;
+  	width: auto;
+  	margin: -10px -10px 3px -10px;
+  }
+
+  .menu-item {
+  	padding: 10px;
+  }
+
+  .item-caption {
+  	display: inline;
+  }
+}

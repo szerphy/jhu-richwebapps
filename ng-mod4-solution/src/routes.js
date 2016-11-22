@@ -29,7 +29,7 @@
       })
       // items list page
       .state('items', {
-        url: '/items/{category}',
+        url: '/items/:category',
         templateUrl: 'templates/main-items.template.html',
         controller: 'MainItemsController as itemsCtrl',
         resolve: {

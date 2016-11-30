@@ -1,0 +1,14 @@
+<div class="menu-item-tile">
+  <div class="row">
+    <div class="col-sm-5">
+      <div class="menu-item-photo">
+        <div>{{$ctrl.favoriteItem.short_name}}</div>
+        <img class="img-responsive" width="250" height="150" ng-src="{{$ctrl.basePath}}/images/{{$ctrl.favoriteItem.short_name}}.jpg" alt="{{$ctrl.favoriteItem.name}}">
+      </div>
+    </div>
+    <div class="menu-item-description col-sm-7">
+      <h3 class="menu-item-title">{{$ctrl.favoriteItem.name}}</h3>
+      <p class="menu-item-details">{{$ctrl.favoriteItem.description}}</p>
+    </div>
+  </div>
+</div>
